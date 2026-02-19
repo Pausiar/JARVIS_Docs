@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalación — J.A.R.V.I.S. Ayuda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══ TOPBAR ═══ -->
+<header class="topbar">
+  <button class="hamburger" aria-label="Menú">☰</button>
+  <div class="topbar-brand">
+    <div class="logo"></div>
+    <h1>J.A.R.V.I.S.</h1>
+    <span>Sistema de Ayuda</span>
+  </div>
+  <div class="topbar-search">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
+    <div id="searchResults" class="search-results"></div>
+  </div>
+  <nav class="topbar-nav">
+    <a href="index.html">🏠 Inicio</a>
+    <a href="indice.html">📑 Índice</a>
+  </nav>
+</header>
+
+<!-- ═══ SIDEBAR ═══ -->
+<aside class="sidebar">
+  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <ul class="sidebar-links">
+      <li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li>
+      <li><a href="introduccion.html#requisitos">Requisitos</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title open"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <ul class="sidebar-links">
+      <li><a href="instalacion.html" class="current">Instalación</a></li>
+      <li><a href="interfaz.html">Primera ejecución</a></li>
+      <li><a href="interfaz.html#configuracion-inicial">Configuración inicial</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <ul class="sidebar-links">
+      <li><a href="comandos.html">Catálogo de comandos</a></li>
+      <li><a href="ocr.html">Interacción visual (OCR)</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <ul class="sidebar-links">
+      <li><a href="configuracion.html">config.py</a></li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Resolución de problemas</div>
+    <ul class="sidebar-links">
+      <li><a href="problemas.html">Problemas comunes</a></li>
+      <li><a href="problemas.html#faq">FAQ</a></li>
+    </ul>
+  </div>
+  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+</aside>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+
+  <div class="breadcrumb">
+    <a href="index.html">Inicio</a> <span class="sep">›</span>
+    <a href="instalacion.html">Primeros pasos</a> <span class="sep">›</span>
+    <span class="current-crumb">Instalación</span>
+  </div>
+
+  <h1>🚀 Instalación paso a paso</h1>
+
+  <p>Siga estos pasos para instalar J.A.R.V.I.S. en su equipo Windows. El proceso completo dura unos <strong>10-15 minutos</strong>.</p>
+
+  <div class="callout callout-warning">
+    <div class="callout-title">⚠️ Requisitos previos</div>
+    <p>Antes de empezar, asegúrese de tener instalado <strong>Python 3.11+</strong>, <strong>Ollama</strong> y <strong>Git</strong>. Consulte <a href="introduccion.html#requisitos">Requisitos del sistema</a> para los enlaces de descarga.</p>
+  </div>
+
+  <!-- Paso 1 -->
+  <div class="step" id="paso1">
+    <div class="step-number">1</div>
+    <div class="step-content">
+      <h4>Clonar el repositorio</h4>
+      <p>Abra <strong>PowerShell</strong> (o Terminal de Windows) y ejecute:</p>
+      <pre><code>git clone https://github.com/Pausiar/JARVIS.git
+cd JARVIS</code></pre>
+      <p>Esto descarga todo el código fuente en una carpeta llamada <code>JARVIS</code>.</p>
+    </div>
+  </div>
+
+  <!-- Paso 2 -->
+  <div class="step" id="paso2">
+    <div class="step-number">2</div>
+    <div class="step-content">
+      <h4>Crear entorno virtual</h4>
+      <p>Un entorno virtual aísla las dependencias de JARVIS del resto de su sistema:</p>
+      <pre><code>python -m venv .venv
+.\.venv\Scripts\Activate.ps1</code></pre>
+      <p>Si usa CMD en vez de PowerShell:</p>
+      <pre><code>.\.venv\Scripts\activate.bat</code></pre>
+      <div class="callout callout-info">
+        <div class="callout-title">💡 ¿Cómo sé que está activado?</div>
+        <p>Verá <code>(.venv)</code> al inicio de la línea del terminal.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paso 3 -->
+  <div class="step" id="paso3">
+    <div class="step-number">3</div>
+    <div class="step-content">
+      <h4>Instalar dependencias</h4>
+      <pre><code>pip install -r requirements.txt</code></pre>
+      <p>Esto instala todas las librerías necesarias (PySide6, pyautogui, faster-whisper, etc.).</p>
+      <p>Si alguna dependencia falla, instale las esenciales manualmente:</p>
+      <pre><code>pip install PySide6 requests psutil keyboard pynput pyautogui faster-whisper numpy sounddevice pycaw comtypes PyMuPDF python-docx openpyxl Pillow piper-tts</code></pre>
+      <p>Si tiene problemas, consulte <a href="problemas.html">Resolución de problemas</a>.</p>
+    </div>
+  </div>
+
+  <!-- Paso 4 -->
+  <div class="step" id="paso4">
+    <div class="step-number">4</div>
+    <div class="step-content">
+      <h4>Descargar el modelo de IA</h4>
+      <p>Abra <strong>dos terminales</strong>:</p>
+      <pre><code># Terminal 1: iniciar el servidor Ollama
+ollama serve
+
+# Terminal 2: descargar el modelo Mistral (~4.4 GB)
+ollama pull mistral</code></pre>
+      <div class="callout callout-info">
+        <div class="callout-title">💡 ¿No quiere descargar 4 GB?</div>
+        <p>Puede usar el <a href="configuracion.html#modo">modo cloud</a> con GitHub Models o Gemini (gratuitos). Cambie <code>BRAIN_MODE = "cloud"</code> en <code>config.py</code> y configure una <a href="configuracion.html#apikey">API Key</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paso 5 -->
+  <div class="step" id="paso5">
+    <div class="step-number">5</div>
+    <div class="step-content">
+      <h4>Ejecutar JARVIS</h4>
+      <pre><code>python main.py</code></pre>
+      <p>Se abrirá la ventana <strong>HUD</strong> con el tema Arc Reactor (cyan). ¡JARVIS está listo!</p>
+      <p>También puede ejecutarlo sin console con el archivo <code>JARVIS.pyw</code> (doble clic) o <code>JARVIS.bat</code>.</p>
+    </div>
+  </div>
+
+  <div class="callout callout-success">
+    <div class="callout-title">✅ ¡Instalación completada!</div>
+    <p>Continúe a <a href="interfaz.html">Primera ejecución</a> para aprender a usar la interfaz y dar su primer comando.</p>
+  </div>
+
+  <!-- Estructura del proyecto -->
+  <h2>📂 Estructura del proyecto</h2>
+
+  <pre><code>JARVIS/
+├── main.py                   # Punto de entrada
+├── config.py                 # Configuración global
+├── requirements.txt          # Dependencias
+├── core/                     # Núcleo del sistema
+│   ├── brain.py              # Conexión con el LLM
+│   ├── voice_input.py        # Reconocimiento de voz
+│   ├── voice_output.py       # Síntesis de voz (TTS)
+│   ├── command_parser.py     # Detección de intenciones
+│   ├── orchestrator.py       # Orquestador central
+│   └── autonomous.py         # Agente autónomo
+├── modules/                  # Módulos funcionales
+│   ├── system_control.py     # Control del sistema, OCR
+│   ├── web_search.py         # Búsquedas en Google
+│   ├── file_manager.py       # Gestión de archivos
+│   ├── document_processor.py # Documentos (PDF, Word...)
+│   ├── email_manager.py      # Email
+│   ├── code_executor.py      # Ejecutar código
+│   ├── automation.py         # Automatización
+│   ├── memory.py             # Memoria persistente
+│   └── media_control.py      # Multimedia
+├── ui/                       # Interfaz gráfica
+│   ├── hud.py                # Ventana HUD principal
+│   ├── styles.py             # Estilos (tema Arc Reactor)
+│   └── widgets.py            # Widgets personalizados
+├── plugins/                  # Extensiones
+└── data/                     # Datos (auto-generados)
+    ├── memory.db             # Base de datos
+    └── logs/                 # Logs del sistema</code></pre>
+
+  <!-- Nav -->
+  <div class="page-nav">
+    <a href="introduccion.html">
+      <span><span class="nav-label">Anterior</span><span class="nav-title">← Introducción</span></span>
+    </a>
+    <a href="interfaz.html">
+      <span><span class="nav-label">Siguiente</span><span class="nav-title">Primera ejecución →</span></span>
+    </a>
+  </div>
+
+</main>
+
+<div class="tip-bar">
+  <span class="tip-icon">💡</span>
+  Si tiene problemas durante la instalación, consulte <a href="problemas.html">Resolución de problemas</a>.
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
