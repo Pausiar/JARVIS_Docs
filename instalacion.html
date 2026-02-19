@@ -90,11 +90,28 @@
   <div class="step" id="paso1">
     <div class="step-number">1</div>
     <div class="step-content">
-      <h4>Clonar el repositorio</h4>
-      <p>Abra <strong>PowerShell</strong> (o Terminal de Windows) y ejecute:</p>
-      <pre><code>git clone https://github.com/Pausiar/JARVIS.git
-cd JARVIS</code></pre>
-      <p>Esto descarga todo el código fuente en una carpeta llamada <code>JARVIS</code>.</p>
+      <h4>Obtener el código fuente</h4>
+      <p>Tiene dos opciones para descargar JARVIS:</p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin:1rem 0;">
+        <div class="callout info" style="margin:0;">
+          <h4>Opción A — Clonar con Git</h4>
+          <p>Abra <strong>PowerShell</strong> y ejecute:</p>
+          <pre><code>git clone https://github.com/Pausiar/JARVIS_Docs.git
+cd JARVIS_Docs</code></pre>
+          <p style="margin-top:8px; font-size:0.9em; color:var(--text-secondary);">Requiere tener <a href="https://git-scm.com" target="_blank">Git</a> instalado. Permite actualizar fácilmente con <code>git pull</code>.</p>
+        </div>
+        <div class="callout success" style="margin:0;">
+          <h4>Opción B — Descargar ZIP</h4>
+          <p>Descargue directamente desde GitHub:</p>
+          <p style="text-align:center; margin:12px 0;">
+            <a href="https://github.com/Pausiar/JARVIS_Docs/archive/refs/heads/main.zip" target="_blank" style="display:inline-block; background:var(--accent); color:var(--bg-primary); padding:10px 20px; border-radius:6px; font-weight:700; text-decoration:none;">⬇️ Descargar ZIP</a>
+          </p>
+          <p style="margin-top:8px; font-size:0.9em; color:var(--text-secondary);">Descomprima el ZIP en la ubicación que prefiera. No requiere Git.</p>
+        </div>
+      </div>
+
+      <p>En ambos casos, obtendrá una carpeta con todo el código fuente de JARVIS. Abra un terminal en esa carpeta para continuar.</p>
     </div>
   </div>
 
