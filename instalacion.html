@@ -10,35 +10,35 @@
 
 <!-- ═══ TOPBAR ═══ -->
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand">
     <div class="logo"></div>
     <h1>J.A.R.V.I.S.</h1>
     <span>Sistema de Ayuda</span>
   </div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
   <nav class="topbar-nav">
-    <a href="index.html">🏠 Inicio</a>
-    <a href="indice.html">📑 Índice</a>
+    <a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
+    <a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a>
   </nav>
 </header>
 
 <!-- ═══ SIDEBAR ═══ -->
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links">
       <li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li>
       <li><a href="introduccion.html#requisitos">Requisitos</a></li>
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title open"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title open"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links">
       <li><a href="instalacion.html" class="current">Instalación</a></li>
       <li><a href="interfaz.html">Primera ejecución</a></li>
@@ -46,26 +46,26 @@
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links">
       <li><a href="comandos.html">Catálogo de comandos</a></li>
       <li><a href="ocr.html">Interacción visual (OCR)</a></li>
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links">
       <li><a href="configuracion.html">config.py</a></li>
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Resolución de problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Resolución de problemas</div>
     <ul class="sidebar-links">
       <li><a href="problemas.html">Problemas comunes</a></li>
       <li><a href="problemas.html#faq">FAQ</a></li>
     </ul>
   </div>
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <!-- ═══ MAIN ═══ -->
@@ -77,12 +77,12 @@
     <span class="current-crumb">Instalación</span>
   </div>
 
-  <h1>🚀 Instalación paso a paso</h1>
+  <h1><svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Instalación paso a paso</h1>
 
   <p>Siga estos pasos para instalar J.A.R.V.I.S. en su equipo Windows. El proceso completo dura unos <strong>10-15 minutos</strong>.</p>
 
   <div class="callout callout-warning">
-    <div class="callout-title">⚠️ Requisitos previos</div>
+    <div class="callout-title"><svg class="icon icon-alert" aria-hidden="true"><use href="icons.svg#icon-alert"></use></svg> Requisitos previos</div>
     <p>Antes de empezar, asegúrese de tener instalado <strong>Python 3.11+</strong>, <strong>Ollama</strong> y <strong>Git</strong>. Consulte <a href="introduccion.html#requisitos">Requisitos del sistema</a> para los enlaces de descarga.</p>
   </div>
 
@@ -105,7 +105,7 @@ cd JARVIS_Docs</code></pre>
           <h4>Opción B — Descargar ZIP</h4>
           <p>Descargue directamente desde GitHub:</p>
           <p style="text-align:center; margin:12px 0;">
-            <a href="https://github.com/Pausiar/JARVIS_Docs/archive/refs/heads/main.zip" target="_blank" style="display:inline-block; background:var(--accent); color:var(--bg-primary); padding:10px 20px; border-radius:6px; font-weight:700; text-decoration:none;">⬇️ Descargar ZIP</a>
+            <a href="https://github.com/Pausiar/JARVIS_Docs/archive/refs/heads/main.zip" target="_blank" style="display:inline-block; background:var(--accent); color:var(--bg-primary); padding:10px 20px; border-radius:6px; font-weight:700; text-decoration:none;"><svg class="icon icon-download" aria-hidden="true"><use href="icons.svg#icon-download"></use></svg> Descargar ZIP</a>
           </p>
           <p style="margin-top:8px; font-size:0.9em; color:var(--text-secondary);">Descomprima el ZIP en la ubicación que prefiera. No requiere Git.</p>
         </div>
@@ -126,7 +126,7 @@ cd JARVIS_Docs</code></pre>
       <p>Si usa CMD en vez de PowerShell:</p>
       <pre><code>.\.venv\Scripts\activate.bat</code></pre>
       <div class="callout callout-info">
-        <div class="callout-title">💡 ¿Cómo sé que está activado?</div>
+        <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> ¿Cómo sé que está activado?</div>
         <p>Verá <code>(.venv)</code> al inicio de la línea del terminal.</p>
       </div>
     </div>
@@ -157,7 +157,7 @@ ollama serve
 # Terminal 2: descargar el modelo Mistral (~4.4 GB)
 ollama pull mistral</code></pre>
       <div class="callout callout-info">
-        <div class="callout-title">💡 ¿No quiere descargar 4 GB?</div>
+        <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> ¿No quiere descargar 4 GB?</div>
         <p>Puede usar el <a href="configuracion.html#modo">modo cloud</a> con GitHub Models o Gemini (gratuitos). Cambie <code>BRAIN_MODE = "cloud"</code> en <code>config.py</code> y configure una <a href="configuracion.html#apikey">API Key</a>.</p>
       </div>
     </div>
@@ -175,12 +175,12 @@ ollama pull mistral</code></pre>
   </div>
 
   <div class="callout callout-success">
-    <div class="callout-title">✅ ¡Instalación completada!</div>
+    <div class="callout-title"><svg class="icon icon-check" aria-hidden="true"><use href="icons.svg#icon-check"></use></svg> ¡Instalación completada!</div>
     <p>Continúe a <a href="interfaz.html">Primera ejecución</a> para aprender a usar la interfaz y dar su primer comando.</p>
   </div>
 
   <!-- Estructura del proyecto -->
-  <h2>📂 Estructura del proyecto</h2>
+  <h2><svg class="icon icon-folder" aria-hidden="true"><use href="icons.svg#icon-folder"></use></svg> Estructura del proyecto</h2>
 
   <pre><code>JARVIS/
 ├── main.py                   # Punto de entrada
@@ -225,7 +225,7 @@ ollama pull mistral</code></pre>
 </main>
 
 <div class="tip-bar">
-  <span class="tip-icon">💡</span>
+  <span class="tip-icon"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg></span>
   Si tiene problemas durante la instalación, consulte <a href="problemas.html">Resolución de problemas</a>.
 </div>
 

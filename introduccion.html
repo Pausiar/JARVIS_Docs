@@ -10,29 +10,29 @@
 
 <!-- ═══ TOPBAR ═══ -->
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand">
     <div class="logo"></div>
     <h1>J.A.R.V.I.S.</h1>
     <span>Sistema de Ayuda</span>
   </div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
   <nav class="topbar-nav">
-    <a href="index.html">🏠 Inicio</a>
-    <a href="indice.html">📑 Índice</a>
+    <a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
+    <a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a>
   </nav>
 </header>
 
 <!-- ═══ SIDEBAR ═══ -->
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title open"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title open"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links">
       <li><a href="introduccion.html" class="current">¿Qué es J.A.R.V.I.S.?</a></li>
       <li><a href="introduccion.html#caracteristicas">Características</a></li>
@@ -41,7 +41,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links">
       <li><a href="instalacion.html">Instalación</a></li>
       <li><a href="interfaz.html">Primera ejecución</a></li>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links">
       <li><a href="comandos.html">Catálogo de comandos</a></li>
       <li><a href="ocr.html">Interacción visual (OCR)</a></li>
@@ -58,7 +58,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links">
       <li><a href="configuracion.html">Archivo config.py</a></li>
       <li><a href="configuracion.html#plugins">Plugins</a></li>
@@ -67,14 +67,14 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Resolución de problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Resolución de problemas</div>
     <ul class="sidebar-links">
       <li><a href="problemas.html">Problemas comunes</a></li>
       <li><a href="problemas.html#faq">FAQ</a></li>
     </ul>
   </div>
 
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <!-- ═══ MAIN ═══ -->
@@ -85,7 +85,7 @@
     <span class="current-crumb">Introducción</span>
   </div>
 
-  <h1>📘 ¿Qué es J.A.R.V.I.S.?</h1>
+  <h1><svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> ¿Qué es J.A.R.V.I.S.?</h1>
 
   <p><strong>J.A.R.V.I.S.</strong> (<em>Just A Rather Very Intelligent System</em>) es un asistente de escritorio con inteligencia artificial para <strong>Windows 10/11</strong>, inspirado en el J.A.R.V.I.S. de Iron Man.</p>
 
@@ -94,35 +94,35 @@
   <p>No es solo un asistente de comandos: JARVIS tiene un <strong>agente autónomo</strong> capaz de leer la pantalla, planificar una secuencia de pasos y ejecutarlos de forma independiente para resolver tareas complejas — desde enviar un WhatsApp hasta resolver ejercicios de un PDF y escribir las soluciones en Word.</p>
 
   <div class="callout callout-info">
-    <div class="callout-title">💡 ¿Para quién es?</div>
+    <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> ¿Para quién es?</div>
     <p>Usuarios de Windows que quieran automatizar tareas cotidianas: abrir apps, buscar en internet, gestionar archivos, resolver ejercicios de PDF, controlar Spotify, y mucho más — todo hablando o escribiendo.</p>
   </div>
 
-  <h2 id="caracteristicas">✨ Características principales</h2>
+  <h2 id="caracteristicas"><svg class="icon icon-sparkle" aria-hidden="true"><use href="icons.svg#icon-sparkle"></use></svg> Características principales</h2>
 
   <table>
     <thead>
       <tr><th>Módulo</th><th>Descripción</th></tr>
     </thead>
     <tbody>
-      <tr><td>🧠 <strong>Cerebro IA</strong></td><td>Conversación natural con modelos de lenguaje. <strong>Modo local</strong>: Ollama (Mistral, LLaMA 3, Phi-3). <strong>Modo cloud</strong>: GitHub Models (GPT-4o-mini, 20K req/día gratis) o Google Gemini (Gemini 2.0 Flash, gratuito)</td></tr>
-      <tr><td>🎙️ <strong>Voz</strong></td><td>Entrada por voz con <code>faster-whisper</code> + salida TTS con <code>Piper</code> (voz natural en español)</td></tr>
-      <tr><td>👁️ <strong>Visión OCR</strong></td><td>Lee la pantalla con <code>Windows.Media.Ocr</code> nativo. Hace clic inteligente por texto o descripción</td></tr>
-      <tr><td>⚙️ <strong>Sistema</strong></td><td>Abre/cierra apps, ajusta volumen/brillo, gestiona ventanas/pestañas, portapapeles</td></tr>
-      <tr><td>🌐 <strong>Web</strong></td><td>Búsquedas en Google (abre pestaña real en el navegador)</td></tr>
-      <tr><td>📁 <strong>Archivos</strong></td><td>Abrir, crear, mover, copiar, buscar y organizar archivos</td></tr>
-      <tr><td>📄 <strong>Documentos</strong></td><td>Leer y resumir PDF, Word, Excel, CSV, JSON. Resolver ejercicios automáticamente</td></tr>
-      <tr><td>🤖 <strong>Agente autónomo</strong></td><td>Planifica y ejecuta tareas complejas de múltiples pasos de forma independiente. Lee la pantalla, interactúa con apps, verifica resultados y aprende procedimientos para el futuro</td></tr>
-      <tr><td>📧 <strong>Email</strong></td><td>Envío de correos electrónicos con SMTP</td></tr>
-      <tr><td>💻 <strong>Código</strong></td><td>Ejecutar scripts Python en sandbox seguro</td></tr>
-      <tr><td>⏰ <strong>Automatización</strong></td><td>Timers, recordatorios, tareas programadas, calendario local</td></tr>
-      <tr><td>🧠 <strong>Memoria</strong></td><td>Recuerda conversaciones y preferencias en SQLite. Aprende procedimientos</td></tr>
-      <tr><td>🎵 <strong>Multimedia</strong></td><td>Media keys, control de Spotify, YouTube, volumen por aplicación</td></tr>
-      <tr><td>🔌 <strong>Plugins</strong></td><td>Sistema extensible con carga automática y hot-reload</td></tr>
+      <tr><td><svg class="icon icon-brain" aria-hidden="true"><use href="icons.svg#icon-brain"></use></svg> <strong>Cerebro IA</strong></td><td>Conversación natural con modelos de lenguaje. <strong>Modo local</strong>: Ollama (Mistral, LLaMA 3, Phi-3). <strong>Modo cloud</strong>: GitHub Models (GPT-4o-mini, 20K req/día gratis) o Google Gemini (Gemini 2.0 Flash, gratuito)</td></tr>
+      <tr><td><svg class="icon icon-mic" aria-hidden="true"><use href="icons.svg#icon-mic"></use></svg> <strong>Voz</strong></td><td>Entrada por voz con <code>faster-whisper</code> + salida TTS con <code>Piper</code> (voz natural en español)</td></tr>
+      <tr><td><svg class="icon icon-eye" aria-hidden="true"><use href="icons.svg#icon-eye"></use></svg> <strong>Visión OCR</strong></td><td>Lee la pantalla con <code>Windows.Media.Ocr</code> nativo. Hace clic inteligente por texto o descripción</td></tr>
+      <tr><td><svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> <strong>Sistema</strong></td><td>Abre/cierra apps, ajusta volumen/brillo, gestiona ventanas/pestañas, portapapeles</td></tr>
+      <tr><td><svg class="icon icon-globe" aria-hidden="true"><use href="icons.svg#icon-globe"></use></svg> <strong>Web</strong></td><td>Búsquedas en Google (abre pestaña real en el navegador)</td></tr>
+      <tr><td><svg class="icon icon-folder" aria-hidden="true"><use href="icons.svg#icon-folder"></use></svg> <strong>Archivos</strong></td><td>Abrir, crear, mover, copiar, buscar y organizar archivos</td></tr>
+      <tr><td><svg class="icon icon-file" aria-hidden="true"><use href="icons.svg#icon-file"></use></svg> <strong>Documentos</strong></td><td>Leer y resumir PDF, Word, Excel, CSV, JSON. Resolver ejercicios automáticamente</td></tr>
+      <tr><td><svg class="icon icon-bot" aria-hidden="true"><use href="icons.svg#icon-bot"></use></svg> <strong>Agente autónomo</strong></td><td>Planifica y ejecuta tareas complejas de múltiples pasos de forma independiente. Lee la pantalla, interactúa con apps, verifica resultados y aprende procedimientos para el futuro</td></tr>
+      <tr><td><svg class="icon icon-mail" aria-hidden="true"><use href="icons.svg#icon-mail"></use></svg> <strong>Email</strong></td><td>Envío de correos electrónicos con SMTP</td></tr>
+      <tr><td><svg class="icon icon-code" aria-hidden="true"><use href="icons.svg#icon-code"></use></svg> <strong>Código</strong></td><td>Ejecutar scripts Python en sandbox seguro</td></tr>
+      <tr><td><svg class="icon icon-clock" aria-hidden="true"><use href="icons.svg#icon-clock"></use></svg> <strong>Automatización</strong></td><td>Timers, recordatorios, tareas programadas, calendario local</td></tr>
+      <tr><td><svg class="icon icon-brain" aria-hidden="true"><use href="icons.svg#icon-brain"></use></svg> <strong>Memoria</strong></td><td>Recuerda conversaciones y preferencias en SQLite. Aprende procedimientos</td></tr>
+      <tr><td><svg class="icon icon-music" aria-hidden="true"><use href="icons.svg#icon-music"></use></svg> <strong>Multimedia</strong></td><td>Media keys, control de Spotify, YouTube, volumen por aplicación</td></tr>
+      <tr><td><svg class="icon icon-plug" aria-hidden="true"><use href="icons.svg#icon-plug"></use></svg> <strong>Plugins</strong></td><td>Sistema extensible con carga automática y hot-reload</td></tr>
     </tbody>
   </table>
 
-  <h2 id="requisitos">📋 Requisitos del sistema</h2>
+  <h2 id="requisitos"><svg class="icon icon-clipboard" aria-hidden="true"><use href="icons.svg#icon-clipboard"></use></svg> Requisitos del sistema</h2>
 
   <h3>Hardware</h3>
   <table>
@@ -146,7 +146,7 @@
   </ul>
 
   <div class="callout callout-warning">
-    <div class="callout-title">⚠️ ¿No tiene GPU o RAM suficiente?</div>
+    <div class="callout-title"><svg class="icon icon-alert" aria-hidden="true"><use href="icons.svg#icon-alert"></use></svg> ¿No tiene GPU o RAM suficiente?</div>
     <p>Puede usar el <a href="configuracion.html#modo">modo cloud</a> para ejecutar la IA en servidores remotos (GitHub Models o Gemini) sin consumo de recursos locales.</p>
   </div>
 
@@ -180,7 +180,7 @@
 </main>
 
 <div class="tip-bar">
-  <span class="tip-icon">💡</span>
+  <span class="tip-icon"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg></span>
   Si es la primera vez, continúe a <a href="instalacion.html">Primeros pasos → Instalación</a>.
 </div>
 

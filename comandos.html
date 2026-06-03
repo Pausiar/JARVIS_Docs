@@ -9,31 +9,31 @@
 <body>
 
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand"><div class="logo"></div><h1>J.A.R.V.I.S.</h1><span>Sistema de Ayuda</span></div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
-  <nav class="topbar-nav"><a href="index.html">🏠 Inicio</a><a href="indice.html">📑 Índice</a></nav>
+  <nav class="topbar-nav"><a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a><a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a></nav>
 </header>
 
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links"><li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links">
       <li><a href="instalacion.html">Instalación</a></li>
       <li><a href="interfaz.html">Primera ejecución</a></li>
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title open"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title open"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links">
       <li><a href="comandos.html" class="current">Catálogo de comandos</a></li>
       <li><a href="comandos.html#sistema">Control del sistema</a></li>
@@ -48,14 +48,14 @@
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links"><li><a href="configuracion.html">config.py</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Problemas</div>
     <ul class="sidebar-links"><li><a href="problemas.html">Problemas comunes</a></li></ul>
   </div>
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <main class="main">
@@ -65,7 +65,7 @@
     <span class="current-crumb">Funciones principales — Catálogo de comandos</span>
   </div>
 
-  <h1>⚙️ Catálogo de comandos</h1>
+  <h1><svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Catálogo de comandos</h1>
 
   <p>A continuación se listan todos los comandos que JARVIS reconoce, agrupados por categoría. Puede escribirlos en la barra de texto o decirlos por voz.</p>
 
@@ -74,12 +74,12 @@
   </div>
 
   <div class="callout callout-info">
-    <div class="callout-title">💡 Lenguaje natural</div>
+    <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> Lenguaje natural</div>
     <p>No necesita memorizar comandos exactos. JARVIS entiende lenguaje natural: «sube el volumen un poco», «ponme música», «qué tiempo hace» — todo se interpreta automáticamente.</p>
   </div>
 
   <!-- ─── Sistema ─── -->
-  <h2 id="sistema">🖥️ Control del sistema</h2>
+  <h2 id="sistema"><svg class="icon icon-monitor" aria-hidden="true"><use href="icons.svg#icon-monitor"></use></svg> Control del sistema</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -98,7 +98,7 @@
   </table>
 
   <!-- ─── Ventanas ─── -->
-  <h2 id="ventanas">🪟 Ventanas y pestañas</h2>
+  <h2 id="ventanas"><svg class="icon icon-window" aria-hidden="true"><use href="icons.svg#icon-window"></use></svg> Ventanas y pestañas</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -114,7 +114,7 @@
   </table>
 
   <!-- ─── Web ─── -->
-  <h2 id="web">🌐 Navegación web</h2>
+  <h2 id="web"><svg class="icon icon-globe" aria-hidden="true"><use href="icons.svg#icon-globe"></use></svg> Navegación web</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -125,7 +125,7 @@
   <p>Cualquier frase que comience con «busca» se convierte en una búsqueda de Google real en su navegador.</p>
 
   <!-- ─── Archivos ─── -->
-  <h2 id="archivos">📁 Gestión de archivos</h2>
+  <h2 id="archivos"><svg class="icon icon-folder" aria-hidden="true"><use href="icons.svg#icon-folder"></use></svg> Gestión de archivos</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -137,7 +137,7 @@
   </table>
 
   <!-- ─── Documentos ─── -->
-  <h2 id="documentos">📄 Documentos (PDF, Word, Excel…)</h2>
+  <h2 id="documentos"><svg class="icon icon-file" aria-hidden="true"><use href="icons.svg#icon-file"></use></svg> Documentos (PDF, Word, Excel…)</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -150,12 +150,12 @@
   </table>
 
   <div class="callout callout-info">
-    <div class="callout-title">💡 Flujo multi-aplicación</div>
+    <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> Flujo multi-aplicación</div>
     <p>JARVIS puede leer un ejercicio en una app (PDF, navegador) y escribir la solución en otra (Word, Google Docs, IntelliJ…). Usa la <a href="ocr.html">visión OCR</a> para leer y los controles del sistema para escribir.</p>
   </div>
 
   <!-- ─── Portapapeles ─── -->
-  <h2 id="portapapeles">📋 Portapapeles</h2>
+  <h2 id="portapapeles"><svg class="icon icon-clipboard" aria-hidden="true"><use href="icons.svg#icon-clipboard"></use></svg> Portapapeles</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -165,7 +165,7 @@
   </table>
 
   <!-- ─── Automatización ─── -->
-  <h2 id="automatizacion">⏰ Automatización</h2>
+  <h2 id="automatizacion"><svg class="icon icon-clock" aria-hidden="true"><use href="icons.svg#icon-clock"></use></svg> Automatización</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -177,7 +177,7 @@
   </table>
 
   <!-- ─── Multimedia ─── -->
-  <h2 id="multimedia">🎵 Multimedia</h2>
+  <h2 id="multimedia"><svg class="icon icon-music" aria-hidden="true"><use href="icons.svg#icon-music"></use></svg> Multimedia</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -189,7 +189,7 @@
   </table>
 
   <!-- ─── Email ─── -->
-  <h2 id="email">📧 Email</h2>
+  <h2 id="email"><svg class="icon icon-mail" aria-hidden="true"><use href="icons.svg#icon-mail"></use></svg> Email</h2>
   <table>
     <thead><tr><th>Comando</th><th>Qué hace</th></tr></thead>
     <tbody>
@@ -199,7 +199,7 @@
   <p>Requiere configurar las credenciales SMTP en <code>data/config.json</code>. Vea <a href="configuracion.html">Configuración</a>.</p>
 
   <!-- ─── Conversación ─── -->
-  <h2 id="conversacion">🗣️ Conversación con la IA</h2>
+  <h2 id="conversacion"><svg class="icon icon-message" aria-hidden="true"><use href="icons.svg#icon-message"></use></svg> Conversación con la IA</h2>
   <p>Cualquier mensaje que no sea un comando directo se envía al modelo de IA para una respuesta conversacional:</p>
   <ul>
     <li><code>¿Qué opinas sobre la inteligencia artificial?</code></li>
@@ -217,7 +217,7 @@
 </main>
 
 <div class="tip-bar">
-  <span class="tip-icon">💡</span>
+  <span class="tip-icon"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg></span>
   JARVIS entiende lenguaje natural. No necesita memorizar comandos exactos.
 </div>
 

@@ -10,29 +10,29 @@
 
 <!-- ═══ TOPBAR ═══ -->
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand">
     <div class="logo"></div>
     <h1>J.A.R.V.I.S.</h1>
     <span>Sistema de Ayuda</span>
   </div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
   <nav class="topbar-nav">
-    <a href="index.html">🏠 Inicio</a>
-    <a href="indice.html">📑 Índice</a>
+    <a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
+    <a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a>
   </nav>
 </header>
 
 <!-- ═══ SIDEBAR ═══ -->
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links">
       <li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li>
       <li><a href="introduccion.html#caracteristicas">Características</a></li>
@@ -41,7 +41,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links">
       <li><a href="instalacion.html">Instalación</a></li>
       <li><a href="interfaz.html">Primera ejecución</a></li>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links">
       <li><a href="comandos.html">Catálogo de comandos</a></li>
       <li><a href="comandos.html#sistema">Control del sistema</a></li>
@@ -66,7 +66,7 @@
   </div>
 
   <div class="sidebar-section open">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links">
       <li><a href="configuracion.html" class="current">Archivo config.py</a></li>
       <li><a href="configuracion.html#modo">Modo local vs. cloud</a></li>
@@ -77,7 +77,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Resolución de problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Resolución de problemas</div>
     <ul class="sidebar-links">
       <li><a href="problemas.html#ollama">Ollama no disponible</a></li>
       <li><a href="problemas.html#apps">No abre aplicaciones</a></li>
@@ -87,7 +87,7 @@
     </ul>
   </div>
 
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <!-- ═══ MAIN CONTENT ═══ -->
@@ -97,7 +97,7 @@
     <a href="index.html">Inicio</a> <span class="sep">›</span> Configuración
   </div>
 
-  <h1>🔧 Configuración</h1>
+  <h1><svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</h1>
   <p>JARVIS se configura mediante el archivo <code>config.py</code> en la raíz del proyecto. Todos los parámetros están documentados con comentarios y no requieren conocimientos avanzados para personalizarlos.</p>
 
   <!-- ── config.py overview ── -->
@@ -110,7 +110,7 @@
       <tr><th>Sección</th><th>Parámetro</th><th>Valor por defecto</th><th>Descripción</th></tr>
     </thead>
     <tbody>
-      <tr><td rowspan="3">🧠 <strong>IA / LLM</strong></td>
+      <tr><td rowspan="3"><svg class="icon icon-brain" aria-hidden="true"><use href="icons.svg#icon-brain"></use></svg> <strong>IA / LLM</strong></td>
           <td><code>BRAIN_MODE</code></td><td><code>"cloud"</code></td>
           <td>Modo de ejecución: <strong>"local"</strong> (Ollama en tu PC) o <strong>"cloud"</strong> (APIs cloud gratuitas)</td></tr>
       <tr><td><code>CLOUD_PROVIDER</code></td><td><code>"github"</code></td>
@@ -118,25 +118,25 @@
       <tr><td><code>OLLAMA_MODEL</code></td><td><code>"mistral"</code></td>
           <td>Modelo Ollama local. Opciones: <code>mistral</code>, <code>llama3</code>, <code>phi3</code></td></tr>
 
-      <tr><td rowspan="2">☁️ <strong>GitHub Models</strong></td>
+      <tr><td rowspan="2"><svg class="icon icon-cloud" aria-hidden="true"><use href="icons.svg#icon-cloud"></use></svg> <strong>GitHub Models</strong></td>
           <td><code>GITHUB_TOKEN</code></td><td><code>""</code></td>
           <td>Token de acceso personal de GitHub (<a href="https://github.com/settings/tokens" target="_blank">obtener aquí</a>)</td></tr>
       <tr><td><code>GITHUB_MODEL</code></td><td><code>"gpt-4o-mini"</code></td>
           <td>Modelo de GitHub Models. GPT-4o-mini: rápido, 20.000 req/día gratis</td></tr>
 
-      <tr><td rowspan="2">✨ <strong>Google Gemini</strong></td>
+      <tr><td rowspan="2"><svg class="icon icon-sparkle" aria-hidden="true"><use href="icons.svg#icon-sparkle"></use></svg> <strong>Google Gemini</strong></td>
           <td><code>GEMINI_API_KEY</code></td><td><code>""</code></td>
           <td>Clave API de Gemini (<a href="https://aistudio.google.com/apikey" target="_blank">obtener aquí</a>)</td></tr>
       <tr><td><code>GEMINI_MODEL</code></td><td><code>"gemini-2.0-flash"</code></td>
           <td>Modelo Gemini. 2.0 Flash: gratuito con límites generosos</td></tr>
 
-      <tr><td rowspan="2">👁️ <strong>Visión</strong></td>
+      <tr><td rowspan="2"><svg class="icon icon-eye" aria-hidden="true"><use href="icons.svg#icon-eye"></use></svg> <strong>Visión</strong></td>
           <td><code>VISION_MODEL</code></td><td><code>"llava"</code></td>
           <td>Modelo multimodal para describir imágenes. Opciones: <code>llava</code>, <code>bakllava</code>, <code>llava-phi3</code></td></tr>
       <tr><td><code>VISION_ENABLED</code></td><td><code>True</code></td>
           <td>Activa o desactiva la capacidad de describir pantalla/fotos</td></tr>
 
-      <tr><td rowspan="4">🎙️ <strong>Voz (STT)</strong></td>
+      <tr><td rowspan="4"><svg class="icon icon-mic" aria-hidden="true"><use href="icons.svg#icon-mic"></use></svg> <strong>Voz (STT)</strong></td>
           <td><code>WHISPER_MODEL</code></td><td><code>"small"</code></td>
           <td>Modelo Whisper para reconocimiento de voz. Opciones: <code>tiny</code>, <code>base</code>, <code>small</code>, <code>medium</code>, <code>large</code></td></tr>
       <tr><td><code>WHISPER_LANGUAGE</code></td><td><code>"es"</code></td>
@@ -146,13 +146,13 @@
       <tr><td><code>WHISPER_COMPUTE_TYPE</code></td><td><code>"int8"</code></td>
           <td><code>"int8"</code> para CPU, <code>"float16"</code> para GPU</td></tr>
 
-      <tr><td rowspan="2">🔊 <strong>Voz (TTS)</strong></td>
+      <tr><td rowspan="2"><svg class="icon icon-speaker" aria-hidden="true"><use href="icons.svg#icon-speaker"></use></svg> <strong>Voz (TTS)</strong></td>
           <td><code>PIPER_VOICE</code></td><td><code>"es_ES-davefx-medium"</code></td>
           <td>Voz de síntesis. Masculina en español, procesada localmente con Piper</td></tr>
       <tr><td><code>TTS_ENABLED</code></td><td><code>True</code></td>
           <td>Activar/desactivar la voz hablada de JARVIS</td></tr>
 
-      <tr><td rowspan="3">⌨️ <strong>Hotkeys</strong></td>
+      <tr><td rowspan="3"><svg class="icon icon-keyboard" aria-hidden="true"><use href="icons.svg#icon-keyboard"></use></svg> <strong>Hotkeys</strong></td>
           <td><code>WAKE_WORD</code></td><td><code>"jarvis"</code></td>
           <td>Palabra clave para activar por voz (en modo escucha continua)</td></tr>
       <tr><td><code>HOTKEY_ACTIVATE</code></td><td><code>"ctrl+shift+j"</code></td>
@@ -160,7 +160,7 @@
       <tr><td><code>HOTKEY_MUTE</code></td><td><code>"ctrl+shift+m"</code></td>
           <td>Atajo para silenciar/activar micrófono</td></tr>
 
-      <tr><td rowspan="4">🖥️ <strong>Interfaz (HUD)</strong></td>
+      <tr><td rowspan="4"><svg class="icon icon-monitor" aria-hidden="true"><use href="icons.svg#icon-monitor"></use></svg> <strong>Interfaz (HUD)</strong></td>
           <td><code>HUD_OPACITY</code></td><td><code>0.95</code></td>
           <td>Transparencia de la ventana (0.0 – 1.0)</td></tr>
       <tr><td><code>HUD_ALWAYS_ON_TOP</code></td><td><code>False</code></td>
@@ -170,13 +170,13 @@
       <tr><td><code>HUD_FONT_FAMILY</code></td><td><code>"JetBrains Mono"</code></td>
           <td>Fuente principal de la interfaz</td></tr>
 
-      <tr><td rowspan="2">🔌 <strong>Plugins</strong></td>
+      <tr><td rowspan="2"><svg class="icon icon-plug" aria-hidden="true"><use href="icons.svg#icon-plug"></use></svg> <strong>Plugins</strong></td>
           <td><code>PLUGINS_ENABLED</code></td><td><code>True</code></td>
           <td>Activar el sistema de plugins</td></tr>
       <tr><td><code>PLUGINS_HOT_RELOAD</code></td><td><code>True</code></td>
           <td>Recargar plugins automáticamente al modificar los archivos</td></tr>
 
-      <tr><td>⏱️ <strong>Código</strong></td>
+      <tr><td><svg class="icon icon-clock" aria-hidden="true"><use href="icons.svg#icon-clock"></use></svg> <strong>Código</strong></td>
           <td><code>CODE_EXEC_TIMEOUT</code></td><td><code>30</code></td>
           <td>Timeout máximo en segundos para ejecución de código Python en sandbox</td></tr>
     </tbody>
@@ -184,14 +184,14 @@
 
 
   <!-- ── Modo local vs cloud ── -->
-  <h2 id="modo">🧠 Modo Local vs. Cloud</h2>
+  <h2 id="modo"><svg class="icon icon-brain" aria-hidden="true"><use href="icons.svg#icon-brain"></use></svg> Modo Local vs. Cloud</h2>
 
   <p>JARVIS tiene un <strong>cerebro dual</strong>: puede funcionar con IA local en tu PC o conectándose a APIs cloud gratuitas. El parámetro <code>BRAIN_MODE</code> en <code>config.py</code> controla qué modo usar.</p>
 
   <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin:1.5rem 0;">
 
     <div class="callout info" style="margin:0;">
-      <h4>💻 Modo Local (<code>BRAIN_MODE = "local"</code>)</h4>
+      <h4><svg class="icon icon-code" aria-hidden="true"><use href="icons.svg#icon-code"></use></svg> Modo Local (<code>BRAIN_MODE = "local"</code>)</h4>
       <ul>
         <li>Usa <strong>Ollama</strong> con modelos como Mistral, LLaMA 3 o Phi-3</li>
         <li>Todo se procesa en tu PC — <strong>sin conexión a internet</strong></li>
@@ -202,7 +202,7 @@
     </div>
 
     <div class="callout success" style="margin:0;">
-      <h4>☁️ Modo Cloud (<code>BRAIN_MODE = "cloud"</code>) — Recomendado</h4>
+      <h4><svg class="icon icon-cloud" aria-hidden="true"><use href="icons.svg#icon-cloud"></use></svg> Modo Cloud (<code>BRAIN_MODE = "cloud"</code>) — Recomendado</h4>
       <ul>
         <li>Usa APIs cloud externas, <strong>sin consumir recursos locales</strong></li>
         <li>Mucho más rápido que Ollama en la mayoría de PCs</li>
@@ -252,8 +252,8 @@ OLLAMA_MODEL = "mistral"    # o "llama3", "phi3"</code></pre>
     <tbody>
       <tr><td><strong>Modelo</strong></td><td>GPT-4o-mini</td><td>Gemini 2.0 Flash</td></tr>
       <tr><td><strong>Coste</strong></td><td>Gratis (20K req/día)</td><td>Gratis (límites generosos)</td></tr>
-      <tr><td><strong>Velocidad</strong></td><td>⚡ Muy rápida</td><td>⚡ Muy rápida</td></tr>
-      <tr><td><strong>Calidad</strong></td><td>⭐⭐⭐⭐ Excelente</td><td>⭐⭐⭐⭐ Excelente</td></tr>
+      <tr><td><strong>Velocidad</strong></td><td><svg class="icon icon-bolt" aria-hidden="true"><use href="icons.svg#icon-bolt"></use></svg> Muy rápida</td><td><svg class="icon icon-bolt" aria-hidden="true"><use href="icons.svg#icon-bolt"></use></svg> Muy rápida</td></tr>
+      <tr><td><strong>Calidad</strong></td><td><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg> Excelente</td><td><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg><svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg> Excelente</td></tr>
       <tr><td><strong>Endpoint</strong></td><td><code>models.inference.ai.azure.com</code></td><td><code>generativelanguage.googleapis.com</code></td></tr>
       <tr><td><strong>Obtener key</strong></td><td><a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a></td><td><a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a></td></tr>
     </tbody>
@@ -261,7 +261,7 @@ OLLAMA_MODEL = "mistral"    # o "llama3", "phi3"</code></pre>
 
 
   <!-- ── API Keys ── -->
-  <h2 id="apikey">🔑 Configurar API Keys</h2>
+  <h2 id="apikey"><svg class="icon icon-key" aria-hidden="true"><use href="icons.svg#icon-key"></use></svg> Configurar API Keys</h2>
 
   <p>Las API keys son <strong>gratuitas</strong> y se necesitan solo si usas el modo cloud. Se guardan cifradas en <code>data/config.json</code>, nunca en el código fuente.</p>
 
@@ -305,7 +305,7 @@ OLLAMA_MODEL = "mistral"    # o "llama3", "phi3"</code></pre>
 
 
   <!-- ── Plugins ── -->
-  <h2 id="plugins">🔌 Sistema de Plugins</h2>
+  <h2 id="plugins"><svg class="icon icon-plug" aria-hidden="true"><use href="icons.svg#icon-plug"></use></svg> Sistema de Plugins</h2>
 
   <p>JARVIS soporta un sistema de plugins que permite extender sus funcionalidades sin tocar el código base. Los plugins se colocan en la carpeta <code>plugins/</code>.</p>
 
@@ -336,7 +336,7 @@ def saludar(params):
 
 
   <!-- ── Memoria ── -->
-  <h2 id="memoria">🧠 Memoria y Aprendizaje</h2>
+  <h2 id="memoria"><svg class="icon icon-brain" aria-hidden="true"><use href="icons.svg#icon-brain"></use></svg> Memoria y Aprendizaje</h2>
 
   <p>JARVIS tiene un sistema de memoria persistente y de aprendizaje que le permite mejorar con cada interacción.</p>
 
