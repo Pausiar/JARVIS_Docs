@@ -9,24 +9,24 @@
 <body>
 
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand"><div class="logo"></div><h1>J.A.R.V.I.S.</h1><span>Sistema de Ayuda</span></div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
-  <nav class="topbar-nav"><a href="index.html">🏠 Inicio</a><a href="indice.html">📑 Índice</a></nav>
+  <nav class="topbar-nav"><a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a><a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a></nav>
 </header>
 
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links"><li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title open"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title open"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links">
       <li><a href="instalacion.html">Instalación</a></li>
       <li><a href="interfaz.html" class="current">Primera ejecución</a></li>
@@ -34,18 +34,18 @@
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links"><li><a href="comandos.html">Catálogo de comandos</a></li><li><a href="ocr.html">OCR</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links"><li><a href="configuracion.html">config.py</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Problemas</div>
     <ul class="sidebar-links"><li><a href="problemas.html">Problemas comunes</a></li></ul>
   </div>
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <main class="main">
@@ -56,7 +56,7 @@
     <span class="current-crumb">Primera ejecución</span>
   </div>
 
-  <h1>🖥️ Primera ejecución y la interfaz HUD</h1>
+  <h1><svg class="icon icon-monitor" aria-hidden="true"><use href="icons.svg#icon-monitor"></use></svg> Primera ejecución y la interfaz HUD</h1>
 
   <p>Al ejecutar <code>python main.py</code>, se abre la ventana HUD (<em>Heads-Up Display</em>) de J.A.R.V.I.S. con el tema Arc Reactor.</p>
 
@@ -71,7 +71,7 @@
       <tr><td><strong>Indicadores de estado</strong></td><td>Puntos de color que muestran el estado: <span style="color:#0099BB">●</span> idle, <span style="color:#4488FF">●</span> escuchando, <span style="color:#FFAA00">●</span> procesando, <span style="color:#44FF44">●</span> hablando</td></tr>
       <tr><td><strong>Área de chat</strong></td><td>Muestra las burbujas de conversación (usuario a la izquierda, JARVIS a la derecha)</td></tr>
       <tr><td><strong>Métricas del sistema</strong></td><td>CPU, RAM, disco — visibles en la parte superior</td></tr>
-      <tr><td><strong>Barra de entrada</strong></td><td>Campo de texto para escribir comandos + botón de micrófono 🎙️</td></tr>
+      <tr><td><strong>Barra de entrada</strong></td><td>Campo de texto para escribir comandos + botón de micrófono <svg class="icon icon-mic" aria-hidden="true"><use href="icons.svg#icon-mic"></use></svg></td></tr>
     </tbody>
   </table>
 
@@ -97,7 +97,7 @@
   </ul>
 
   <div class="callout callout-info">
-    <div class="callout-title">💡 Consejo</div>
+    <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> Consejo</div>
     <p>Consulte el <a href="comandos.html">catálogo completo de comandos</a> para ver todo lo que JARVIS puede hacer.</p>
   </div>
 
@@ -110,7 +110,7 @@
     <thead><tr><th>Modo</th><th>Proveedor / Modelo</th><th>Ventajas</th><th>Requisitos</th></tr></thead>
     <tbody>
       <tr><td><strong>Local</strong></td><td>Ollama (Mistral, LLaMA 3, Phi-3)</td><td>100% privado, sin internet</td><td>RAM 8 GB+, modelo (~4 GB)</td></tr>
-      <tr><td rowspan="2"><strong>Cloud</strong> ⭐</td><td>GitHub Models (<strong>GPT-4o-mini</strong>)</td><td>Muy rápido, 20K req/día gratis</td><td>Internet + token GitHub</td></tr>
+      <tr><td rowspan="2"><strong>Cloud</strong> <svg class="icon icon-star" aria-hidden="true"><use href="icons.svg#icon-star"></use></svg></td><td>GitHub Models (<strong>GPT-4o-mini</strong>)</td><td>Muy rápido, 20K req/día gratis</td><td>Internet + token GitHub</td></tr>
       <tr><td>Google Gemini (<strong>2.0 Flash</strong>)</td><td>Gratis, límites generosos</td><td>Internet + API key Google</td></tr>
     </tbody>
   </table>
@@ -136,7 +136,7 @@
 </main>
 
 <div class="tip-bar">
-  <span class="tip-icon">💡</span>
+  <span class="tip-icon"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg></span>
   Pulse <strong>Ctrl+Shift+J</strong> para mostrar JARVIS desde cualquier aplicación.
 </div>
 

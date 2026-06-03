@@ -10,29 +10,29 @@
 
 <!-- ═══ TOPBAR ═══ -->
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand">
     <div class="logo"></div>
     <h1>J.A.R.V.I.S.</h1>
     <span>Sistema de Ayuda</span>
   </div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
   <nav class="topbar-nav">
-    <a href="index.html">🏠 Inicio</a>
-    <a href="indice.html">📑 Índice</a>
+    <a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
+    <a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a>
   </nav>
 </header>
 
 <!-- ═══ SIDEBAR ═══ -->
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links">
       <li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li>
       <li><a href="introduccion.html#caracteristicas">Características</a></li>
@@ -41,7 +41,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links">
       <li><a href="instalacion.html">Instalación</a></li>
       <li><a href="interfaz.html">Primera ejecución</a></li>
@@ -50,7 +50,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links">
       <li><a href="comandos.html">Catálogo de comandos</a></li>
       <li><a href="comandos.html#sistema">Control del sistema</a></li>
@@ -66,7 +66,7 @@
   </div>
 
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links">
       <li><a href="configuracion.html">Archivo config.py</a></li>
       <li><a href="configuracion.html#modo">Modo local vs. cloud</a></li>
@@ -77,7 +77,7 @@
   </div>
 
   <div class="sidebar-section open">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Resolución de problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Resolución de problemas</div>
     <ul class="sidebar-links">
       <li><a href="problemas.html#ollama" class="current">Ollama no disponible</a></li>
       <li><a href="problemas.html#apps">No abre aplicaciones</a></li>
@@ -87,7 +87,7 @@
     </ul>
   </div>
 
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <!-- ═══ MAIN CONTENT ═══ -->
@@ -97,12 +97,12 @@
     <a href="index.html">Inicio</a> <span class="sep">›</span> Resolución de problemas
   </div>
 
-  <h1>❌ Resolución de Problemas</h1>
+  <h1><svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Resolución de Problemas</h1>
   <p>Guía para diagnosticar y resolver los problemas más comunes de JARVIS. Si tu problema no aparece aquí, revisa <code>data/logs/jarvis.log</code> para ver el error exacto.</p>
 
 
   <!-- ── Ollama ── -->
-  <h2 id="ollama">🧠 Ollama no disponible / IA no responde</h2>
+  <h2 id="ollama"><svg class="icon icon-brain" aria-hidden="true"><use href="icons.svg#icon-brain"></use></svg> Ollama no disponible / IA no responde</h2>
 
   <div class="callout info">
     <strong>¿Usas modo cloud?</strong> Si tienes <code>BRAIN_MODE = "cloud"</code> (la configuración por defecto), no necesitas Ollama en absoluto. Pasa directamente a la sección de <a href="#cloud-errors">errores de API cloud</a>.
@@ -147,7 +147,7 @@
 
 
   <!-- ── Cloud errors ── -->
-  <h2 id="cloud-errors">☁️ Errores de APIs Cloud</h2>
+  <h2 id="cloud-errors"><svg class="icon icon-cloud" aria-hidden="true"><use href="icons.svg#icon-cloud"></use></svg> Errores de APIs Cloud</h2>
 
   <table class="key-table">
     <thead>
@@ -186,7 +186,7 @@
 
 
   <!-- ── Apps ── -->
-  <h2 id="apps">📂 No abre aplicaciones</h2>
+  <h2 id="apps"><svg class="icon icon-folder" aria-hidden="true"><use href="icons.svg#icon-folder"></use></svg> No abre aplicaciones</h2>
 
   <table class="key-table">
     <thead>
@@ -218,7 +218,7 @@
 
 
   <!-- ── Voz ── -->
-  <h2 id="voz">🎙️ Voz y micrófono</h2>
+  <h2 id="voz"><svg class="icon icon-mic" aria-hidden="true"><use href="icons.svg#icon-mic"></use></svg> Voz y micrófono</h2>
 
   <table class="key-table">
     <thead>
@@ -267,7 +267,7 @@
 
 
   <!-- ── OCR ── -->
-  <h2 id="ocr">👁️ OCR / Clic incorrecto</h2>
+  <h2 id="ocr"><svg class="icon icon-eye" aria-hidden="true"><use href="icons.svg#icon-eye"></use></svg> OCR / Clic incorrecto</h2>
 
   <table class="key-table">
     <thead>
@@ -308,7 +308,7 @@
 
 
   <!-- ── FAQ ── -->
-  <h2 id="faq">❓ Preguntas frecuentes</h2>
+  <h2 id="faq"><svg class="icon icon-help" aria-hidden="true"><use href="icons.svg#icon-help"></use></svg> Preguntas frecuentes</h2>
 
   <details class="faq-item">
     <summary>¿JARVIS funciona sin internet?</summary>

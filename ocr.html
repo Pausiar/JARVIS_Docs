@@ -9,42 +9,42 @@
 <body>
 
 <header class="topbar">
-  <button class="hamburger" aria-label="Menú">☰</button>
+  <button class="hamburger" aria-label="Menú"><svg class="icon icon-menu" aria-hidden="true"><use href="icons.svg#icon-menu"></use></svg></button>
   <div class="topbar-brand"><div class="logo"></div><h1>J.A.R.V.I.S.</h1><span>Sistema de Ayuda</span></div>
   <div class="topbar-search">
-    <span class="search-icon">🔍</span>
+    <span class="search-icon"><svg class="icon icon-search" aria-hidden="true"><use href="icons.svg#icon-search"></use></svg></span>
     <input type="text" id="searchInput" placeholder="Buscar en la ayuda..." autocomplete="off">
     <div id="searchResults" class="search-results"></div>
   </div>
-  <nav class="topbar-nav"><a href="index.html">🏠 Inicio</a><a href="indice.html">📑 Índice</a></nav>
+  <nav class="topbar-nav"><a href="index.html"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a><a href="indice.html"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice</a></nav>
 </header>
 
 <aside class="sidebar">
-  <a href="index.html" class="sidebar-link-direct">🏠 Inicio</a>
+  <a href="index.html" class="sidebar-link-direct"><svg class="icon icon-home" aria-hidden="true"><use href="icons.svg#icon-home"></use></svg> Inicio</a>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 📘 Introducción</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-book" aria-hidden="true"><use href="icons.svg#icon-book"></use></svg> Introducción</div>
     <ul class="sidebar-links"><li><a href="introduccion.html">¿Qué es J.A.R.V.I.S.?</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🚀 Primeros pasos</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-rocket" aria-hidden="true"><use href="icons.svg#icon-rocket"></use></svg> Primeros pasos</div>
     <ul class="sidebar-links"><li><a href="instalacion.html">Instalación</a></li><li><a href="interfaz.html">Primera ejecución</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title open"><span class="arrow">▶</span> ⚙️ Funciones principales</div>
+    <div class="sidebar-section-title open"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-settings" aria-hidden="true"><use href="icons.svg#icon-settings"></use></svg> Funciones principales</div>
     <ul class="sidebar-links">
       <li><a href="comandos.html">Catálogo de comandos</a></li>
       <li><a href="ocr.html" class="current">Interacción visual (OCR)</a></li>
     </ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> 🔧 Configuración</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-tool" aria-hidden="true"><use href="icons.svg#icon-tool"></use></svg> Configuración</div>
     <ul class="sidebar-links"><li><a href="configuracion.html">config.py</a></li></ul>
   </div>
   <div class="sidebar-section">
-    <div class="sidebar-section-title"><span class="arrow">▶</span> ❌ Problemas</div>
+    <div class="sidebar-section-title"><span class="arrow"><svg class="icon icon-chevron" aria-hidden="true"><use href="icons.svg#icon-chevron"></use></svg></span> <svg class="icon icon-x-circle" aria-hidden="true"><use href="icons.svg#icon-x-circle"></use></svg> Problemas</div>
     <ul class="sidebar-links"><li><a href="problemas.html#ocr">Problemas con OCR</a></li></ul>
   </div>
-  <a href="indice.html" class="sidebar-link-direct">📑 Índice alfabético</a>
+  <a href="indice.html" class="sidebar-link-direct"><svg class="icon icon-index" aria-hidden="true"><use href="icons.svg#icon-index"></use></svg> Índice alfabético</a>
 </aside>
 
 <main class="main">
@@ -55,7 +55,7 @@
     <span class="current-crumb">Interacción visual (OCR)</span>
   </div>
 
-  <h1>👁️ Interacción visual (OCR)</h1>
+  <h1><svg class="icon icon-eye" aria-hidden="true"><use href="icons.svg#icon-eye"></use></svg> Interacción visual (OCR)</h1>
 
   <p>J.A.R.V.I.S. puede <strong>ver y leer la pantalla</strong> utilizando el motor OCR nativo de Windows (<code>Windows.Media.Ocr</code>). Esto le permite hacer clic en texto visible, leer contenido de cualquier aplicación e interactuar con la interfaz de forma autónoma.</p>
 
@@ -100,7 +100,7 @@
   <h2 id="doble-clic">Doble clic automático</h2>
 
   <div class="callout callout-warning">
-    <div class="callout-title">⚠️ Clic simple vs. doble clic</div>
+    <div class="callout-title"><svg class="icon icon-alert" aria-hidden="true"><use href="icons.svg#icon-alert"></use></svg> Clic simple vs. doble clic</div>
     <p>En el <strong>Explorador de archivos</strong> y el <strong>escritorio de Windows</strong>, un clic simple solo <em>selecciona</em> el elemento. Para <strong>abrirlo</strong> se necesita <strong>doble clic</strong>.</p>
   </div>
 
@@ -147,11 +147,11 @@
   </ul>
 
   <div class="callout callout-info">
-    <div class="callout-title">💡 Aprendizaje de procedimientos</div>
+    <div class="callout-title"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg> Aprendizaje de procedimientos</div>
     <p>Si una tarea multi-paso se completa con éxito, JARVIS la <strong>guarda como procedimiento</strong> para ejecutarla más rápido la próxima vez. Solo se guardan procedimientos que superan una validación de coherencia (los pasos deben corresponder al objetivo). Vea <a href="configuracion.html#memoria">Memoria y aprendizaje</a>.</p>
   </div>
 
-  <p>Si el OCR no funciona correctamente, consulte <a href="problemas.html#ocr" class="xref">🔗 Resolución de problemas → OCR / Clic incorrecto</a>.</p>
+  <p>Si el OCR no funciona correctamente, consulte <a href="problemas.html#ocr" class="xref"><svg class="icon icon-link" aria-hidden="true"><use href="icons.svg#icon-link"></use></svg> Resolución de problemas → OCR / Clic incorrecto</a>.</p>
 
   <div class="page-nav">
     <a href="comandos.html"><span><span class="nav-label">Anterior</span><span class="nav-title">← Catálogo de comandos</span></span></a>
@@ -161,7 +161,7 @@
 </main>
 
 <div class="tip-bar">
-  <span class="tip-icon">💡</span>
+  <span class="tip-icon"><svg class="icon icon-lightbulb" aria-hidden="true"><use href="icons.svg#icon-lightbulb"></use></svg></span>
   El OCR funciona con el idioma es-ES de Windows. Verifique que está instalado en Configuración → Idioma.
 </div>
 
